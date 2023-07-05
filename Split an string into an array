@@ -1,0 +1,3 @@
+const str = "numentica";
+const res=str.match(/.{1,2}/g) ?? [];
+console.log(res);
