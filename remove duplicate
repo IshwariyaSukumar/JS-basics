@@ -1,0 +1,4 @@
+//8. duplicate
+let chars=['a', 'b', 'a', 'h', 't', 'h'];
+let unique=[new Set(chars)];
+console.log(unique);
