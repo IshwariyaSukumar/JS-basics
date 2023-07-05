@@ -1,0 +1,4 @@
+let msg="be kind whenever possible. kindness is what matters";
+let word="kind";
+let res=msg.split(word).length-1;
+console.log(res);
