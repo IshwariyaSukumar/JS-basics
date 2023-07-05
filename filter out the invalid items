@@ -1,0 +1,12 @@
+//3.filter invalid items
+const arr=["name", "id", 34, "board"];
+console.log(remove(arr));
+
+function remove(arr){
+for(let i=0; i<arr.length; i++){
+    if(typeof arr[i]=="boolean"){
+       delete arr[i];
+    }
+}
+return arr;
+}
