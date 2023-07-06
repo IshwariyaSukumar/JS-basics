@@ -1,12 +1,15 @@
 //3.filter invalid items
 const arr=["name", "id", 34, "board"];
-console.log(remove(arr));
+let type="string";
+console.log(filterArray(arr,type));
 
-function remove(arr){
-for(let i=0; i<arr.length; i++){
-    if(typeof arr[i]=="boolean"){
-       delete arr[i];
+function filterArray(arr,type){
+    const res=[];
+    for(let i=0; i<arr.length; i++){
+        let elementType=typeof arr[i]
+        if(elementType!=type){
+            res.push(arr[i]);
+        }
     }
-}
-return arr;
+    return res;
 }
